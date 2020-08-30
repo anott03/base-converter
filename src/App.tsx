@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 import { Typography, MenuItem, FormControl, Select, Button} from '@material-ui/core';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 function App() {
   const [inputNum, setInputNum]: [number, any] = useState(0);
@@ -32,7 +33,10 @@ function App() {
       <div className="app__header">
         <h1 className='app__title'>Base Converter</h1>
         <div className="app__headerLinks">
-          <a href="https://github.com/anott03/base-converter.git">Github</a>
+          <a className="app__link" href="https://github.com/anott03/base-converter.git">
+            <GitHubIcon />
+            Github
+          </a>
         </div>
       </div>
 

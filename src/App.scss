@@ -22,11 +22,6 @@
   margin-bottom: 0;
 }
 
-.app__headerLinks > .MuiSvgIcon-root {
-  font-size: 10px;
-  margin: 0 10px;
-}
-
 .app__body {
   padding: 1rem;
 }
@@ -70,4 +65,15 @@
   align-items: center;
 }
 
+.app__link {
+  color: #42b6f5;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.app__link > .MuiSvgIcon-root {
+  font-size: 20px;
+  margin: 0 10px;
+}
 
