@@ -32,9 +32,7 @@ function App() {
       <div className="app__header">
         <h1 className='app__title'>Base Converter</h1>
         <div className="app__headerLinks">
-          <a>About</a>
-          <FiberManualRecordIcon/>
-          <a>Github</a>
+          <a href="https://github.com/anott03/base-converter.git">Github</a>
         </div>
       </div>
 
