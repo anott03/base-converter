@@ -6,7 +6,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 function App() {
   const [inputNum, setInputNum]: [number, any] = useState(0);
-  const [outputNum, setOutputNum]: [number, any] = useState(0);
+  const [outputNum, setOutputNum]: [string, any] = useState('0');
   const [selectedBase, setSelectedBase]: [number, any] = useState(2);
 
   const bases = Array.from(Array(37).keys()).filter(n => n !== 0 && n !== 1);
@@ -21,7 +21,7 @@ function App() {
 
   const calculateConversion = (e: any) => {
     e.preventDefault();
-    setOutputNum(parseInt(inputNum.toString(selectedBase)));
+    setOutputNum(inputNum.toString(selectedBase));
   }
 
   const onBaseChange = (e: any) => {
@@ -67,7 +67,7 @@ function App() {
           <Typography variant='h5' className='app__inputLabel' >Binary</Typography>
           : <Typography variant='h5' className='app__inputLabel' >Base {selectedBase}</Typography>
           }
-          <input type="number" value={outputNum} disabled/>
+          <input type="text" value={outputNum} disabled/>
         </div>
       </div>
     </div>
