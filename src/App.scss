@@ -1,0 +1,73 @@
+@import 'variables';
+
+.app {
+  background-color: $bg;
+  height: 100vh;
+}
+
+.app__header {
+  text-align: center;
+  background-color: $header-bg;
+  color: $fg;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__headerLinks {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  margin-bottom: 0;
+}
+
+.app__headerLinks > .MuiSvgIcon-root {
+  font-size: 10px;
+  margin: 0 10px;
+}
+
+.app__body {
+  padding: 1rem;
+}
+
+.app__inputForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__formInput {
+  display: flex;
+  align-items: center;
+}
+
+.app__formInput > input {
+  font-size: medium;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 1rem 0;
+  margin-left: 1rem;
+  background-color: #d0d0d0;
+  flex: 1;
+}
+
+.app__inputLabel {
+  color: #d0d0d0;
+}
+
+.app__dropdownSelect {
+  color: black !important;
+  background-color: #d0d0d0 !important;
+}
+
+.app__conversionChoices > .app__dropdown {
+  margin-left: 10px;
+}
+
+.app__conversionChoices {
+  display: flex;
+  align-items: center;
+}
+
+
