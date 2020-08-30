@@ -62,12 +62,13 @@ function App() {
           </div>
           <Button type="submit" variant="contained" color="primary">Convert</Button>
         </form>
-        <div className="app__formInput">
+        <div className="app__output">
           { selectedBase == 2 ?
           <Typography variant='h5' className='app__inputLabel' >Binary</Typography>
           : <Typography variant='h5' className='app__inputLabel' >Base {selectedBase}</Typography>
           }
-          <input type="text" value={outputNum} disabled/>
+          {/* <input type="text" value={outputNum} disabled/> */}
+          <p className="app__outputText">{outputNum}</p>
         </div>
       </div>
     </div>
