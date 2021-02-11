@@ -10,6 +10,6 @@ If you would like to customize it or run it offline, do the following.
 
 1. Clone the repository: `git clone https://github.com/anott03/base-converter.git`
 2. Change directory into the cloned repository: `cd base-converter`
-3. Install the dependencies (you need `yarn` for this): `yarn add`
+3. Install the dependencies (you need `yarn` for this): `yarn`
 4. Run it: `yarn start`. By default this will run the app on [localhost:3000](http://localhost:3000).
 
